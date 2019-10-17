@@ -57,7 +57,7 @@ module Ubiquity
 
       @files_objects.map {|file| file.save(validate: false)}  if  @work_object.try(:file_sets).try(:present?)
 
-    rescue ActiveFedora::AssociationTypeMismatch, ActiveFedora::RecordInvalid, RSolr::Error::Http: RSolr::Error::Http  => e
+    rescue ActiveFedora::AssociationTypeMismatch, ActiveFedora::RecordInvalid, Ldp::Gone, RSolr::Error::Http  => e
          puts "error saving #{e}"
     end
 
