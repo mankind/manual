@@ -1,0 +1,9 @@
+[
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/41/46/36/34/41463634-c9a2-4e78-9bfa-d8c227e0c738": []},
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/3f/6f/68/d9/3f6f68d9-12b8-45e0-9471-ce44fb1582a9": []},
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/03/c3/61/c8/03c361c8-a0dc-490e-9e39-6a9643e4df45": []},
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/66/9c/99/03/669c9903-53cd-4e5f-8313-85fd9c0c00da": ["http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/a3/91/3b/38/a3913b38-5876-4426-8453-51d80f274501"]},
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/d3/c1/e7/df/d3c1e7df-0e39-4c69-a8a7-fa0b4c62fd14": ["http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/c2/b1/91/12/c2b19112-4419-4a19-8e67-af0990f54ab0"]},
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/d4/5f/b2/aa/d45fb2aa-7cd5-4cad-bbeb-b9408c1c0713": ["http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/43/f7/75/29/43f77529-0529-44b5-99a6-91c7af4ef07d"]},
+  {"http://fcrepo:8080/fcrepo/rest/880b2eb8-bd5f-4e33-a5aa-02230b921470/95/e4/67/57/95e46757-6435-4ac4-b17b-aa8864ad241c": []}
+]
