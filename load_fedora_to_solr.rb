@@ -47,7 +47,7 @@ module Ubiquity
     end
 
     def save_work_to_solr
-      if @work_object.file_sets.present?
+      if @work_object.class != FileSet && @work_object.try(:file_sets).try(:present?)
         @work_object.thumbnail = @thumbnail_object
         @work_object.representative = @representatuve_object
         @work_object.ordered_members.clear
@@ -55,9 +55,9 @@ module Ubiquity
       end
       @work_object.save(validate: false)
 
-      @files_objects.map {|file| file.save(validate: false)}  if  @work_object.file_sets.present?
+      @files_objects.map {|file| file.save(validate: false)}  if  @work_object.try(:file_sets).try(:present?)
 
-      rescue ActiveFedora::AssociationTypeMismatch, ActiveFedora::RecordInvalid  => e
+    rescue ActiveFedora::AssociationTypeMismatch, ActiveFedora::RecordInvalid, RSolr::Error::Http: RSolr::Error::Http  => e
          puts "error saving #{e}"
     end
 
