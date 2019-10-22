@@ -15,7 +15,8 @@ module Ubiquity
       if @data.present?
         AccountElevator.switch!(tenant_name)
         new_data = @data.shift(@skip_number)
-        new_data.lazy.each do |hash|
+        puts "first #{new_data} records skipped"
+        @data.lazy.each do |hash|
           work_uri = hash.keys.first
           files_uri = hash.values.flatten
           #AddFromRdfUriToSolrJob.perform_later(work_uri, files_uri, tenant_name)
